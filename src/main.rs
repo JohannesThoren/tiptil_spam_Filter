@@ -10,7 +10,7 @@ mod filter;
 
 fn main() {
     let mut v = vocabulary::Vocabulary::new();
-    v.build_dict_from_csv("msgs.csv");
+    v.build_vocabulary_from_csv("msgs.csv");
     v.save_to_file("vocabulary.txt");
 
     let csv_file = File::open("msgs.csv");
